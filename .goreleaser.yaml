@@ -1,5 +1,7 @@
 # This is an example .goreleaser.yml file with some sensible defaults.
 # Make sure to check the documentation at https://goreleaser.com
+version: 2
+
 project_name: example-templates
 builds:
   - env:
@@ -9,7 +11,7 @@ builds:
       - linux
       - darwin
 
-templates:
+template_files:
   - src: ''
     dst: blah
   - src: .github/release.tpl.sh
