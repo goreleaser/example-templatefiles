@@ -12,12 +12,15 @@ builds:
       - darwin
 
 template_files:
-  - src: ''
+  - id: empty-src
+    src: ''
     dst: blah
-  - src: .github/release.tpl.sh
+  - id: release-script
+    src: .github/release.tpl.sh
     dst: release.sh
     mode: 0755
-  - src: 'aaa'
+  - id: empty-dst
+    src: 'aaa'
     dst: ''
 
 # The lines beneath this are called `modelines`. See `:help modeline`
